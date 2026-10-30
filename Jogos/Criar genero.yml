@@ -1,0 +1,23 @@
+info:
+  name: Criar genero
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/generos
+  body:
+    type: json
+    data: |-
+      { 
+        "nome": "call of dut",
+        "descricao": "acao"
+
+      }  
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
